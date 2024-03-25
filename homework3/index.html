@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+    }
+    .product-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        class="product"
+        placeholder="Введите название продукта"
+        style="width: 300px"
+      />
+      <textarea name="product-area" class="product-text" id="1" cols="30" rows="10"></textarea>
+    </div>
+    <button class="product-button">Добавить Отзыв</button>
+
+    <script src="java.js"></script>
+  </body>
+</html>
